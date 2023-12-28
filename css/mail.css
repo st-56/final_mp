@@ -20,6 +20,7 @@ hr{
     margin-top: 55px;
     margin-bottom: 55px;
 }
+
 /*header*/
 header{
     width: 90%;
@@ -42,6 +43,11 @@ header{
 }
 .nav{
     display: flex;
+    padding: 0;
+}
+.nav_li{
+    list-style: none;
+    transition: all 0.25s ease-in-out;
 }
 .nav_item{ 
     font-size: 1.2rem;
@@ -49,10 +55,13 @@ header{
     margin-left: 50px;
     list-style:none;
     color: #FFB800;
-    opacity: 75%;
+    opacity: 70%;
     padding: 5px 10px;
     text-decoration: none;
     transition: all 0.25s ease-in-out;
+}
+.nav_li:hover{
+    transform:translateY(-0.2rem) ;
 }
 .nav_item:hover{
     opacity: 100%;
@@ -70,10 +79,14 @@ header{
         width:130px;
     }
     .nav_item{
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding: 0;
         margin-left: 30px;
     }
+
+    /*content*/
+
+
     /*footer{
 
     }
@@ -93,9 +106,11 @@ header{
         width:100px;
     }
     .nav{
-        width: 100%;
+        border-radius: 10px;
+        width: 30%;
         display: block;
         position: absolute;
+        right: 20px;
         background-color: rgb(72, 72, 72);
         padding: 0;
         top:65px;
@@ -106,9 +121,13 @@ header{
         padding:0.5rem 0 0.5rem 0;
         border-bottom:1px solid rgba(255, 255, 255, 0.5);
     }
+    .nav_li:nth-child(4){
+        border-color:transparent;
+    }
     .nav_item{
+        padding-left: 1rem;
         opacity: 100%;
-        font-size: 0.8rem;
+        font-size: 1rem;
         margin:0;
     }
     .nav_item:hover{
@@ -149,20 +168,20 @@ header{
 
     /*content*/
     .slogan2{
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
     .container{
         margin-left: 20px;
         margin-right: 20px;
     }
     .q4{
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
     .cheer2{
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: 60px;
+        margin-right: 60px;
     }
 
     footer{
@@ -175,6 +194,7 @@ header{
         display: flex;
         justify-content: center;
         flex-direction: column;
+        margin-bottom: 20px;
     }
     .all-icon{
         display: flex;
