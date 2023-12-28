@@ -191,7 +191,7 @@ header{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
     .contact_icon{
         width: 37px;
@@ -201,6 +201,7 @@ header{
     .all-icon{
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
     .cr{
         display: flex;
