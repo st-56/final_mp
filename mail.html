@@ -10,16 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;900&family=Playpen+Sans:wght@400;700&display=swap" 
           rel="stylesheet">
     <title>mail</title>
+    <link rel="icon" href="/img/mainlogoblack.ico" type="image/x-icon"/>
 </head>
 <body>
     <header>
-        <img src="./img/logo2.png" alt="logo" class="logo">
-        <ul class="nav">
-            <li><a href="home.html" class="nav_item">首頁</a></li>
-            <li><a href="about.html" class="nav_item">關於</a></li>
-            <li><a href="monster.html" class="nav_item">怪獸檔案</a></li>
-            <li><a href="mail.html" class="nav_item">通報</a></li>
-        </ul>
+        <a href="home.html">
+            <img src="img/logo.png" alt="logo" class="logo">
+        </a>
+        <div class="nav_con">
+            <span class="nav_icon" menu_click="false"></span>
+            <ul class="nav">
+                <li class="nav_li"><a href="home.html" class="nav_item home">首頁</a></li>
+                <li class="nav_li"><a href="about.html" class="nav_item about">關於</a></li>
+                <li class="nav_li"><a href="monster.html" class="nav_item doc">怪獸檔案</a></li>
+                <li class="nav_li"><a href="mail.html" class="nav_item report">通報</a></li>
+            </ul>
+        </div>
     </header>
     <!--<div class="logo">
         <h1 class="name">monsters pursuit</h1>
@@ -185,7 +191,7 @@
                 <div class="q3">
                     <h4>Q3:我可以加入怪獸追緝局嗎?</h4>
                     <p>    
-                        A3:可以!我們會不5定期招募新成員，
+                        A3:可以!我們會不定期招募新成員，
                         還請注意我們的最新消息，
                         期待日後與您並肩作戰!
                     </p>
@@ -209,13 +215,15 @@
             您的支持與協助，是我們進步的動力!
         </p>
     </div>
-    <script src="./js/mail_photo.js"></script>
-    <script src="./js/mail_submit.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/mail_submit.js"></script>
+    <!--<script src="./js/mail_photo.js"></script>-->
+    <!--<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script type="module" src="./js/mail_firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>-->
+    <!--<script type="module" src="./js/mail_firebase.js"></script>-->
 </body>
 <footer>
     <div class="contact">
