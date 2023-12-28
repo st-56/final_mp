@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    new WOW().init();
     let menu_click=false;
     $('.nav_icon').click(function(){
         menu_click=!menu_click;
