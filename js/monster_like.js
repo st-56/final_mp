@@ -31,7 +31,22 @@ function renderChart() {
     chart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: Array.from({ length: numPersons }, (_, i) => 'Person ' + (i + 1)),
+            labels: [
+            //Array.from({ length: numPersons }, (_, i) => 'Person ' + (i + 1)),
+                '軟爛怪',
+                '躺平怪',
+                '盜腦怪',
+                '偷書怪',
+                '臭嘴怪',
+                '偷鞋怪',
+                '偷吃怪',
+                '憂鬱怪',
+                '伸手牌怪',
+                '偷窺怪',
+                '偷傘怪',
+                '邋遢怪',
+            ],  
+            
             datasets: [{
                 label: 'Hates Count',
                 data: hateCounts.map(count => Math.round(count)),
