@@ -10,6 +10,7 @@
 .row{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 0 -10px;
 }
 
@@ -652,11 +653,12 @@ footer{
     align-self: center;
 }
 
-/*
-.col-md-12 {width: 100%};
-.col-md-6 {width: 50%};
-.col-md-4 {width: 33.332%};
-*/
+@media screen and (min-width:769px){
+    
+    .col-md-12 {width: 100%};
+    .col-md-6 {width: 50%};
+    .col-md-4 {width: 33.332%};
+}
 
 @media screen and (max-width:768px){
 
@@ -798,6 +800,10 @@ footer{
     }
     .zone12{
         width: 100%;
+    }
+    .sent{
+        display: block;
+        flex-wrap: wrap;
     }
     .vote-cont{
         margin-left: 30px;
