@@ -767,15 +767,19 @@ footer{
     /*content*/
     .pics1{
         display: block;
+        margin-bottom: 0;
     }
     .pics2{
         display: block;
+        margin-bottom: 0;
     }
     .pics3{
         display: block;
+        margin-bottom: 0;
     }
     .pics4{
         display: block;
+        margin-bottom: 0;
     }
     .zone1{
         width: 100%;
