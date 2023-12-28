@@ -150,6 +150,18 @@ header{
     }
 
     /*content*/
+    .pics1{
+        display: block;
+    }
+    .pics2{
+        display: block;
+    }
+    .pics3{
+        display: block;
+    }
+    .pics4{
+        display: block;
+    }
     .zone1{
         width: 100%;
     }
@@ -208,7 +220,6 @@ header{
     .all-icon{
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
     .cr{
         display: flex;
