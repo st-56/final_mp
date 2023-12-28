@@ -370,6 +370,7 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .mon{
@@ -522,6 +523,7 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .zone3{
@@ -529,6 +531,7 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .pics2{
@@ -543,6 +546,7 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .zone5{
@@ -550,6 +554,7 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .zone6{
@@ -557,6 +562,7 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .pics3{
@@ -571,6 +577,7 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .zone8{
@@ -578,6 +585,7 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .zone9{
@@ -585,6 +593,7 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .pics4{
@@ -600,6 +609,7 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .zone11{
@@ -607,6 +617,7 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .zone12{
@@ -614,6 +625,7 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 footer{
@@ -655,16 +667,16 @@ footer{
 
 @media screen and (min-width:769px){
     
-    .col-md-12 {width: 100%};
-    .col-md-6 {width: 50%};
-    .col-md-4 {width: 33.332%};
+    .col-lg-12 {width: 100%};
+    .col-lg-6 {width: 50%};
+    .col-lg-4 {width: 33.332%};
 }
 
 @media screen and (max-width:768px){
 
-    .col-sm-12 {width: 100%};
-    .col-sm-6 {width: 50%};
-    .col-sm-4 {width: 33.332%};
+    .col-md-12 {width: 100%};
+    .col-md-6 {width: 50%};
+    .col-md-4 {width: 33.332%};
 
     header{
         padding-bottom: 20px;
