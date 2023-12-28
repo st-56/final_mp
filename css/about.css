@@ -42,16 +42,23 @@ header{
 .nav{
     display: flex;
 }
+.nav_li{
+    list-style: none;
+    transition: all 0.25s ease-in-out;
+}
 .nav_item{ 
     font-size: 1.2rem;
     font-family: gensenrounded;
     margin-left: 50px;
     list-style:none;
     color: #FFB800;
-    opacity: 75%;
+    opacity: 70%;
     padding: 5px 10px;
     text-decoration: none;
     transition: all 0.25s ease-in-out;
+}
+.nav_li:hover{
+    transform:translateY(-0.2rem) ;
 }
 .nav_item:hover{
     opacity: 100%;
