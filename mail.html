@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./mail.css">
-    <link rel="stylesheet" type="text/css" href="./normalize.css">
+    <link rel="stylesheet" href="./css/mail.css">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;900&family=Playpen+Sans:wght@400;700&display=swap" 
@@ -74,10 +74,10 @@
 					<div class="col-12">
 						<div class="form">
 							<div>
-								<input type="text" placeholder="發現的怪獸 : X X 怪">
+								<input type="text" id="monsterInput" placeholder="發現的怪獸 : X X 怪" required>
 							</div>
 							<div>
-								<input type="text" placeholder="發現的地點 : X X 樓">
+								<input type="text" id="locationInput" placeholder="發現的地點 : X X 樓" required>
 							</div>
                             <div class="text-center upload">
                                 <label class="input-label" for="input-file">
@@ -86,16 +86,19 @@
                                 <input class="input-file" type='file' id="input-file" />
                             </div>
                             <p class="upload-filename" id="upload-filename"></p>
-                            <button type="button" class="btn col-sm-12 btn-info shadow" id="btnUpload">
+                            <button type="button" class="btn col-sm-12 btn-info shadow" id="btnUpload" onclick="uploadFile()">
                                 上傳
                             </button>
 							<div>
-								<textarea placeholder="更多回覆"></textarea>
+								<textarea id="commentInput" placeholder="更多回覆"></textarea>
 							</div>
 							<div class="text-center handin">
                                 <form id="myform">
                                     <input type="submit" value="提交">
                                 </form>
+                                <!--<button type="button" class="btn col-sm-12 btn-info shadow" id="btnsubmit" onclick="submitForm()">
+                                    提交
+                                </button>-->
                             </div>
 						</div>	
 					</div>
@@ -206,28 +209,13 @@
             您的支持與協助，是我們進步的動力!
         </p>
     </div>
-    <script src="./mail_photo.js"></script>
-    <script src="./mail_submit.js"></script>
+    <script src="./js/mail_photo.js"></script>
+    <script src="./js/mail_submit.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-          apiKey: "AIzaSyAtW4LN_b4sSxG5eOZNWafaMn8GNYyKNdY",
-          authDomain: "monsterpursuit.firebaseapp.com",
-          projectId: "monsterpursuit",
-          storageBucket: "monsterpursuit.appspot.com",
-          messagingSenderId: "1006124283828",
-          appId: "1:1006124283828:web:4e68f0b07562462689a4e1"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-      </script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script type="module" src="./js/mail_firebase.js"></script>
 </body>
 <footer>
     <div class="contact">
