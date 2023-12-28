@@ -48,7 +48,27 @@ body {
   .pulse-bubble-3 {
       animation: pulse .4s ease .4s infinite alternate;
   }*/
-
+.ya{
+    display: none;
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+}
+.haha:nth-child(1){
+    position: absolute;
+    top:0px;
+    right: 100px;
+    width: 50%;
+}
+.haha:nth-child(2){
+    position: absolute;
+    width: 100%;
+}
+.haha:nth-child(3){
+    position: absolute;
+    top:0;
+    width: 50%;
+}
 /*font*/
 @font-face {
     font-family: jf;
