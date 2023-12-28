@@ -10,18 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;900&family=Playpen+Sans:wght@400;700&display=swap" 
           rel="stylesheet">
     <title>monster</title>
+    <link rel="icon" href="/img/mainlogoblack.ico" type="image/x-icon"/>
 </head>
 <body>
     <header>
-        <img src="./img/logo2.png" alt="logo" class="logo">
-        <ul class="nav">
-            <li><a href="home.html" class="nav_item">首頁</a></li>
-            <li><a href="about.html" class="nav_item">關於</a></li>
-            <li><a href="monster.html" class="nav_item">怪獸檔案</a></li>
-            <li><a href="mail.html" class="nav_item">通報</a></li>
-        </ul>
+        <a href="home.html">
+            <img src="img/logo.png" alt="logo" class="logo">
+        </a>
+        <div class="nav_con">
+            <span class="nav_icon" menu_click="false"></span>
+            <ul class="nav">
+                <li class="nav_li"><a href="home.html" class="nav_item home">首頁</a></li>
+                <li class="nav_li"><a href="about.html" class="nav_item about">關於</a></li>
+                <li class="nav_li"><a href="monster.html" class="nav_item doc">怪獸檔案</a></li>
+                <li class="nav_li"><a href="mail.html" class="nav_item report">通報</a></li>
+            </ul>
+        </div>
     </header>
-    <hr class="line">
+    <!--<hr class="line">-->
     <!---<div class="logo">
         <h1 class="name">monsters pursuit</h1>
     </div>
@@ -388,13 +394,16 @@
     <script src="./js/monster_expl.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/monster_like.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
 </body>
 <footer>
     <div class="contact">
-        <img src="img/fb.png" alt="fb" class="icon">
-        <img src="img/ig.png" alt="ig" class="icon">
-        <img src="img/x.png" alt="x" class="icon">
-        <p class="mail">mail:monsterpursuit@gmail.com</p>
+        <p class="mail">mail : monsterpursuit@gmail.com</p>
+        <div class="all-icon">
+            <a href="https://www.facebook.com/"><img src="img/fb.svg" alt="fb" class="contact_icon"></a>
+            <a href="https://www.instagram.com/"><img src="img/ig.svg" alt="ig" class="contact_icon"></a>
+            <a href="https://twitter.com/home"><img src="img/x.svg" alt="x" class="contact_icon"></a>
+        </div>
     </div>
     <p class="cr">copyright &copy; 2023 monsterpursuit</p>
 </footer>
