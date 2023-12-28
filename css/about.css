@@ -102,7 +102,7 @@ header{
     .nav_item{
         padding-left: 1rem;
         opacity: 100%;
-        font-size: 0.8rem;
+        font-size: 1rem;
         margin:0;
     }
     .nav_item:hover{
