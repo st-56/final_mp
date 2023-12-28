@@ -1,3 +1,54 @@
+/*@keyframes pulse {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: .25;
+      transform: scale(.75);
+    }
+  }
+body {
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .spinner-box {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+.pulse-container {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pulse-bubble {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFB800;
+  }
+  
+  .pulse-bubble-1 {
+      animation: pulse .4s ease 0s infinite alternate;
+  }
+  .pulse-bubble-2 {
+      animation: pulse .4s ease .2s infinite alternate;
+  }
+  .pulse-bubble-3 {
+      animation: pulse .4s ease .4s infinite alternate;
+  }*/
+
 /*font*/
 @font-face {
     font-family: jf;
@@ -17,12 +68,12 @@ html{
 *,*:after,*:before{
     box-sizing: inherit;
 }
-hr{
+/*hr{
     border-color: #FFB800;
     width: 50%;
     margin-top: 55px;
     margin-bottom: 55px;
-}
+}*/
 /*header*/
 header{
     width: 90%;
@@ -41,6 +92,7 @@ header{
 }
 .nav{
     display: flex;
+    padding: 0;
 }
 .nav_li{
     list-style: none;
@@ -74,7 +126,7 @@ header{
         width:130px;
     }
     .nav_item{ 
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding: 0;
         margin-left: 30px;
     }
@@ -149,6 +201,9 @@ header{
     }
 }
 /*main*/
+main{
+    margin-top: 100px;
+}
 .title{
     display: inline-block;
     font-family: gensenrounded;
@@ -161,10 +216,10 @@ header{
     padding-left:8px ;
 }
 .intro{
-    width: 1000px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    height: 100vh;
+    margin-bottom: 150px;
 }
 .intro_container{
     display: flex;
@@ -188,7 +243,10 @@ header{
     font-size: 18px;
 }
 .conpose_con{
-    height: 100vh;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
 }
 .title_compose{
     width: 80%;
@@ -202,55 +260,53 @@ header{
 }
 .compose_pic{
     width: 150px;
-    margin-right: 20px;
+    margin-right: 40px;
     box-shadow:2px 2px 5px 5px black;
 }
 .investigation{
-    border-start-end-radius: 20px;
-    border-end-end-radius: 20px;
-    width: 50%;
+    border-radius: 20px;
+    align-self: flex-start;
+    width: 70%;
     background-color:rgba(255, 255, 255, 0.5);
     border:2px solid white;
-    border-left-width: 0;
     color: white;
     font-family:gensenrounded ;
     line-height: 150%;
     font-size: 18px;
-    margin-bottom: 35px;
-    padding: 10px 15px 20px 80px;
+    padding: 10px 70px 40px 75px;
+    margin-bottom: 80px;
 }
 .investigation_container{
     display: flex;
     align-items: center;
 }
 .arrest{
-    border-start-start-radius: 20px;
-    border-end-start-radius: 20px;
+    border-radius: 20px;
     align-self: flex-end;
-    width: 50%;
+    width: 70%;
     background-color:rgba(255, 255, 255, 0.5);
     border:2px solid white;
-    border-right-width: 0;
     color: white;
     font-family:gensenrounded ;
     line-height: 150%;
     font-size: 18px;
-    padding: 10px 70px 20px 25px;
+    padding: 10px 70px 40px 75px;
 }
 .arrest_item{
     display: flex;
     align-items: center;
 }
 .monster{
-    height: 100vh;
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 200px;
 }
 .qa{
+    margin-top: 32px;
     margin-left: auto;
     margin-right: auto;
-    padding: 42px 20px;
+    padding: 42px 40px;
     width: 80%;
     background-color:rgba(255, 255, 255, 0.5);
     border:2px solid white;
@@ -260,6 +316,9 @@ header{
     font-size: 18px;
     line-height: 150%;
 }
+.q{
+    color: black;
+}
 .youcan{
     color: #0FF;
     font-family:gensenrounded ;
@@ -267,11 +326,11 @@ header{
     margin-top: 50px;
 }
 .guide{
+    margin-bottom: 200px;
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 67px;
-    height: 100vh;
+    margin-bottom: 200px;
 }
 .youcan{
     text-align: center;
@@ -329,3 +388,124 @@ footer{
     align-self: center;
 }
 /*rwd*/
+@media screen and (max-width:1280px){
+    .conpose_con{
+        width: 700px;
+    }
+    .monster{
+        width: 700px;
+    }
+    .guide{
+        width: 700px;
+    }
+    .intro{
+        width: 700px;
+    }
+    .investigation,.arrest{
+        width: 70%;
+        padding: 10px 40px 40px 45px;
+        margin-bottom: 80px;
+    }
+    .investigation_container,.arrest_item{
+        flex-direction: column;
+    }
+    .investigation_container img,.arrest_item img{
+        margin-bottom: 20px;
+    }
+    .guide_pic{
+        width:120px;
+    }
+}
+@media screen and (max-width:768px){
+    .intro_content{
+        font-size: 1rem;
+        border: 1.5px solid rgba(255, 255, 255, 0.5);
+    }
+    main{
+        margin-top: 50px;
+    }
+    .title{
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+    .conpose_con{
+        width: 450px;
+    }
+    .monster{
+        width: 450px;
+    }
+    .guide{
+        width: 450px;
+    }
+    .intro{
+        width: 450px;
+    }
+    .investigation,.arrest{
+        width: 70%;
+        padding: 15px;
+        margin-bottom: 80px;
+        font-size: 1rem;
+        border: 1.5px solid rgba(255, 255, 255, 0.5);
+    }
+    .investigation_container img,.arrest_item img{
+        margin-bottom: 10px;
+    }
+    .guide_pic{
+        width:120px;
+    }
+    .guide_container{
+        flex-wrap: wrap;
+    }
+    .guide_text{
+        font-size: 0.8rem;
+    }
+    .youcan{
+        font-size: 1rem;
+    }
+    .qa{
+        font-size: 1rem;
+        border: 1.5px solid rgba(255, 255, 255, 0.5);
+    }
+    }
+    @media screen and (max-width:480px){
+        .guide_item{
+            width: 160px;
+        }
+        .conpose_con{
+            width: 380px;
+        }
+        .intro_container{
+            margin-top: 30px;
+            flex-direction: column;
+            font-size: 0.8rem;
+        }
+        .intro_container img{
+            margin: 0;
+        }
+        .monster{
+            width: 380px;
+        }
+        .guide{
+            width: 380px;
+        }
+        .intro{
+            width: 380px;
+            font-size: 0.8rem;
+        }
+        .investigation_container,.arrest_item{
+            flex-direction: column;
+        }
+        .investigation_container img,.arrest_item img{
+            margin-bottom: 20px;
+        }
+        .guide_pic{
+            width:120px;
+        }
+        .guide_container{
+            width: 350px;
+        }
+        .intro_content{
+            width: 80%;
+        }
+       
+    }
