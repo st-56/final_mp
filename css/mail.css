@@ -1,48 +1,3 @@
-@media screen and (min-width: 480px){
-    .col-xs-12 {width: 100%;}
-    .col-xs-11 {width: 91.662%;}
-    .col-xs-10 {width: 83.332%;}
-    .col-xs-9 {width: 75%;}
-    .col-xs-8 {width: 66.662%;}
-    .col-xs-7 {width: 58.331%;}
-    .col-xs-6 {width: 50%;}
-    .col-xs-5 {width: 41.662%;}
-    .col-xs-4 {width: 33.332%;}
-    .col-xs-3 {width: 25%;}
-    .col-xs-2 {width: 16.662%;}
-    .col-xs-1 {width: 8.332%;}
-}
-
-@media screen and (min-width: 768px){
-    .col-sm-12 {width: 100%;}
-    .col-sm-11 {width: 91.662%;}
-    .col-sm-10 {width: 83.332%;}
-    .col-sm-9 {width: 75%;}
-    .col-sm-8 {width: 66.662%;}
-    .col-sm-7 {width: 58.331%;}
-    .col-sm-6 {width: 50%;}
-    .col-sm-5 {width: 41.662%;}
-    .col-sm-4 {width: 33.332%;}
-    .col-sm-3 {width: 25%;}
-    .col-sm-2 {width: 16.662%;}
-    .col-sm-1 {width: 8.332%;}
-}
-
-@media screen and (min-width: 1200px){
-    .col-md-12 {width: 100%;}
-    .col-md-11 {width: 91.662%;}
-    .col-md-10 {width: 83.332%;}
-    .col-md-9 {width: 75%;}
-    .col-md-8 {width: 66.662%;}
-    .col-md-7 {width: 58.331%;}
-    .col-md-6 {width: 50%;}
-    .col-md-5 {width: 41.662%;}
-    .col-md-4 {width: 33.332%;}
-    .col-md-3 {width: 25%;}
-    .col-md-2 {width: 16.662%;}
-    .col-md-1 {width: 8.332%;}
-}
-
 @font-face {
     font-family: jf;
     src: url(../font/jf-openhuninn-2.0.ttf);
@@ -52,8 +7,11 @@
     src: url(../font/GenSenRounded-R.ttc);
 }
 
-html{
+body{
     background-color: black;
+}
+html{
+    box-sizing: border-box;
 }
 
 hr{
@@ -69,38 +27,139 @@ header{
     padding-bottom: 24px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     margin-bottom: 30px;
-    border-bottom:2px solid #FFB800;
+    border-bottom:1.5px solid #FFB800;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .logo{
-    width:175px;
+    width: 175px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
 }
 .nav{
     display: flex;
 }
 .nav_item{ 
-    font-size: 20px;
+    font-size: 1.2rem;
     font-family: gensenrounded;
-    margin-right: 60px;
+    margin-left: 50px;
     list-style:none;
     color: #FFB800;
+    opacity: 75%;
     padding: 5px 10px;
     text-decoration: none;
+    transition: all 0.25s ease-in-out;
 }
 .nav_item:hover{
-    background-color: #FFB800;
-    color: black;
+    opacity: 100%;
 }
 
-.logo{
-    height: 80px;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
+.report{
+    opacity: 100%;
+}
+
+@media screen and (max-width:768px){
+    header{
+        padding-bottom: 20px;
+    }
+    .logo{
+        width:130px;
+    }
+    .nav_item{
+        font-size: 0.8rem;
+        padding: 0;
+        margin-left: 30px;
+    }
+    /*footer{
+
+    }
+    .contact{
+
+    }
+    .cr{
+
+    }*/
+}
+@media screen and (max-width:480px){
+    header{
+        padding-bottom: 10px;
+        border-bottom:1px solid #FFB800;
+    }
+    .logo{
+        width:100px;
+    }
+    .nav{
+        width: 100%;
+        display: block;
+        position: absolute;
+        background-color: rgb(72, 72, 72);
+        padding: 0;
+        top:65px;
+        display: none;
+    }
+    .nav_li{
+        list-style:none;
+        padding:0.5rem 0 0.5rem 0;
+        border-bottom:1px solid rgba(255, 255, 255, 0.5);
+    }
+    .nav_item{
+        opacity: 100%;
+        font-size: 0.8rem;
+        margin:0;
+    }
+    .nav_item:hover{
+        opacity: 50%;
+    }
+    .nav_icon{
+        display: block;
+        font-size: 1rem;
+        padding: 0 1em;
+        border-radius: 0.25em;
+    }
+    .nav_icon::before,
+    .nav_icon::after{
+        display: block;
+        content: "";
+        background-color: #FFB800;
+        width: 1.2em;
+        height: 0.1em;
+        margin: 0.3em 0;
+        border-radius: 0.25em;
+        transition: all 0.2s ease-in-out;
+    }
+    .nav_icon[menu_click="false"]:hover.nav_icon::before{
+        transform: translateY(-0.2rem);
+    }
+    .nav_icon[menu_click="false"]:hover.nav_icon::after{
+        transform: translateY(0.2rem);
+    }
+    .nav_icon[menu_click="true"].nav_icon::before{
+        transform: translateY(0.3rem) rotate(-45deg);
+    }
+    .nav_icon[menu_click="true"].nav_icon::after{
+        transform:translateY(-0.1rem) rotate(45deg);
+    }
+    .menu_click{
+        display: block;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
+    }
+    .cr{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .name{
