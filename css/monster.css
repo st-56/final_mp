@@ -370,7 +370,6 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .mon{
@@ -523,7 +522,6 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .zone3{
@@ -531,7 +529,6 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .pics2{
@@ -546,7 +543,6 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .zone5{
@@ -554,7 +550,6 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .zone6{
@@ -562,7 +557,6 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .pics3{
@@ -577,7 +571,6 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .zone8{
@@ -585,7 +578,6 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .zone9{
@@ -593,7 +585,6 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .pics4{
@@ -609,7 +600,6 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .zone11{
@@ -617,7 +607,6 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .zone12{
@@ -625,7 +614,6 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 footer{
@@ -767,52 +755,56 @@ footer{
     /*content*/
     .pics1{
         display: block;
-        margin-bottom: 0;
     }
     .pics2{
         display: block;
-        margin-bottom: 0;
     }
     .pics3{
         display: block;
-        margin-bottom: 0;
     }
     .pics4{
         display: block;
-        margin-bottom: 0;
     }
     .zone1{
         width: 100%;
+        margin-bottom: 30px;
     }
     .zone2{
         width: 100%;
+        margin-bottom: 30px;
     }
     .zone3{
         width: 100%;
     }
     .zone4{
         width: 100%;
+        margin-bottom: 30px;
     }
     .zone5{
         width: 100%;
+        margin-bottom: 30px;
     }
     .zone6{
         width: 100%;
     }
     .zone7{
         width: 100%;
+        margin-bottom: 30px;
     }
     .zone8{
         width: 100%;
+        margin-bottom: 30px;
     }
     .zone9{
         width: 100%;
     }
     .zone10{
         width: 100%;
+        margin-bottom: 30px;
     }
     .zone11{
         width: 100%;
+        margin-bottom: 30px;
     }
     .zone12{
         width: 100%;
