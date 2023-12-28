@@ -677,6 +677,56 @@ footer{
         padding: 0;
         margin-left: 30px;
     }
+    
+    /*content*/
+    .pics1{
+        display: block;
+    }
+    .pics2{
+        display: block;
+    }
+    .pics3{
+        display: block;
+    }
+    .pics4{
+        display: block;
+    }
+    .zone1{
+        width: 100%;
+    }
+    .zone2{
+        width: 100%;
+    }
+    .zone3{
+        width: 100%;
+    }
+    .zone4{
+        width: 100%;
+    }
+    .zone5{
+        width: 100%;
+    }
+    .zone6{
+        width: 100%;
+    }
+    .zone7{
+        width: 100%;
+    }
+    .zone8{
+        width: 100%;
+    }
+    .zone9{
+        width: 100%;
+    }
+    .zone10{
+        width: 100%;
+    }
+    .zone11{
+        width: 100%;
+    }
+    .zone12{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:480px){
