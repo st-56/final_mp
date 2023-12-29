@@ -19,12 +19,16 @@
     padding: 0 10px;
 }
 
-body{
-    background-color: black;
-}
-
 html{
     box-sizing: border-box;
+}
+
+*,*:after,*:before{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: black;
 }
 
 header{
@@ -677,52 +681,60 @@ footer{
         padding: 0;
         margin-left: 30px;
     }
-    
+
     /*content*/
     .pics1{
-        display: block;
+        flex-wrap: wrap;
     }
     .pics2{
-        display: block;
+        flex-wrap: wrap;
     }
     .pics3{
-        display: block;
+        flex-wrap: wrap;
     }
     .pics4{
-        display: block;
+        flex-wrap: wrap;
     }
     .zone1{
         width: 50%;
+        margin-bottom: 50px;
     }
     .zone2{
         width: 50%;
+        margin-bottom: 50px;
     }
     .zone3{
         width: 50%;
     }
     .zone4{
         width: 50%;
+        margin-bottom: 50px;
     }
     .zone5{
         width: 50%;
+        margin-bottom: 50px;
     }
     .zone6{
         width: 50%;
     }
     .zone7{
         width: 50%;
+        margin-bottom: 50px;
     }
     .zone8{
         width: 50%;
+        margin-bottom: 50px;
     }
     .zone9{
         width: 50%;
     }
     .zone10{
         width: 50%;
+        margin-bottom: 50px;
     }
     .zone11{
         width: 50%;
+        margin-bottom: 50px;
     }
     .zone12{
         width: 50%;
