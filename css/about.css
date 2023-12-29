@@ -338,6 +338,7 @@ main{
 }
 .q{
     color: black;
+    font-weight: bold;
 }
 .youcan{
     color: #0FF;
