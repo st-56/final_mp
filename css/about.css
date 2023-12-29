@@ -377,6 +377,7 @@ main{
 .guide_pic{
     width: 165px;
     border-radius: 100%;
+    color: white;
 }
 /*footer*/
 footer{
